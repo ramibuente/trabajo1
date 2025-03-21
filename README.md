@@ -1,1 +1,2 @@
-#Nombre: Ramiro Buente                                                                                                                 Legajo:17870/7
+Nombre: Ramiro Buente                                                                           
+Legajo:17870/7
