@@ -1,4 +1,4 @@
-import random
+import random, sys
 
 # Preguntas para el juego
 questions = ["¿Qué función se usa para obtener la longitud de una cadena en Python?",
@@ -37,12 +37,12 @@ for questions,answers,correct_answers_index in questions_to_ask:
         #se verifica si la respuesta es un numero
         if  not user_put.isdigit():
             print("Respuesta no valida, no se permiten letras")
-            exit(1)
+            sys.exit(1)
         #se verifica si el numero ingresado esta entre el rango posible de las respuesta
         num= int(user_put)
         if num<1 or num>4:
             print("Respuesta no valida(rango entre 1-4)")
-            exit(1)
+            sys.exit(1)
         user_answer= int(num) -1
         # Se verifica si la respuesta es correcta
         if user_answer == correct_answers_index:
